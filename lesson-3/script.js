@@ -16,12 +16,12 @@ var mainList = {
 }
 
 function start () {
-	money = prompt("Ваш бюджет за месяц?",'');
+	money = prompt("Ваш бюджет на месяц?",'');
 	name = prompt("Название вашего магазина?").toUpperCase();
 	time = 19;
 
 	while (isNaN(money) || money == '' || money == null) {
-		money = prompt("Ваш бюджет за месяц?",'');
+		money = prompt("Ваш бюджет на месяц?",'');
 	}
 
 	for (let i = 0; i < 1; i++) {	
@@ -109,7 +109,6 @@ function getDiscount() {
 					}					
 					alert("Цена без скидки = " + price);
 					alert("Скидка = " + (discount * 100 + "%"));
-					//Вычисление скидки
 					alert("Цена со скидкой = " + price * (1 - discount));
 					break;						
 				default:
