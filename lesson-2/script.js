@@ -17,7 +17,8 @@ for (let i = 0; i < 5; i++) {
 		console.log('Всё верно!');
 		mainList.shopGoods[i] = a;
 	} else {
-
+			console.log('Не верно! Введите заново');
+			--i;
 	}
 
 }
